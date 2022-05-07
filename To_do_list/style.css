@@ -1,0 +1,67 @@
+html{
+    width: 50%;
+
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2061CB
+}
+
+body{
+    background-color: white
+}
+
+.titles{
+    font-family: fantasy;
+    text-align: center;
+}
+
+.container {
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+    min-width: 600px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: fantasy;
+    
+}
+
+#inputField {
+    width: 75%;
+    height: 45px;
+    padding: 1px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+
+
+
+#addToDo {
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #0d75ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.to-dos{
+    font-size: 25px;
+    font-family: fantasy;
+}
