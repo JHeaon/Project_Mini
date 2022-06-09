@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% load static %} {% block body %}
+<!-- Page Header-->
+
+<header
+  class="masthead"
+  style="background-image: url({% static 'assets/img/bg.png' %});"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          <h1>About Me</h1>
+          <span class="subheading">This is what i do.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<main class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div style="text-align: center">
+          <div>
+            <img
+              src=" {% static 'assets/img/Jheaon.jpg' %} "
+              class="rounded float-start"
+              style="width: 350px; height: 350px; margin-right: 30px"
+              alt="Jheaon"
+            />
+          </div>
+          <div>
+            <h2>정해원</h2>
+            <p style="text-align: left; font-family: 'Anybody', cursive;" >
+              < Tech Stack ><br />
+              <br />
+              PL : Python <br />
+              FW : Django <br / >
+              <br />
+              < Contact > <br />
+              <br />
+              Phone-number : 010-2571-6182 <br />
+              Email : j3heawon@naver.com <br />
+            </p>
+          </div>
+          <hr class="my-4" />
+          <div>
+            <p> 아래에는 각 기술에 대한 사용도를 %로 나타낼 예정! </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

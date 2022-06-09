@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% load static %} {% block body %}
+  <!-- Page Header-->
+  <header
+    class="masthead"
+    style="background-image: url({% static 'assets/img/bg.png' %});"
+  >
+    <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <div class="post-heading">
+            <h1>프로젝트1</h1>
+            <h2 class="subheading">
+              프로젝트1에 대한 소제목
+            </h2>
+            <span class="meta">
+              Posted by
+              <a href="#!">Jheaon</a>
+              on August 24, 2022
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Post Content-->
+  <article class="mb-4">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <h2 class="section-heading">소제목</h2>
+          <p>
+            내용
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+s"></script>
+</body>
+{% endblock %}
