@@ -41,7 +41,7 @@ while True:
         tag = driver.find_element_by_css_selector(f"#content_image_{cnt}")
         img = tag.get_attribute("src")
         urllib.request.urlretrieve(
-            img, f"{word}//" + f"{word} {total}화 {cnt}.jpg")
+            img, f"{word}//" + f"{word} {total}화 {cnt + 1}.jpg")
         cnt += 1
         time.sleep(0.2)
     except:
