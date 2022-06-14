@@ -18,10 +18,13 @@ driver.get(url)
 time.sleep(0.2)
 
 # 본 웹툰 크롤링
-driver.find_element_by_css_selector("#content > div:nth-child(2) > ul > li > h5 > a").click()
+driver.find_element_by_css_selector(
+    "#content > div:nth-child(2) > ul > li > h5 > a").click()
 time.sleep(0.2)
-driver.find_element_by_css_selector("#content > table > tbody > tr:nth-child(3) > td:nth-child(1) > a > span").click()
-driver.find_element_by_css_selector("#comicRemocon > div.remote_cont > div.btn_area > a.btn_prev_end").click()
+driver.find_element_by_css_selector(
+    "#content > table > tbody > tr:nth-child(3) > td:nth-child(1) > a > span").click()
+driver.find_element_by_css_selector(
+    "#comicRemocon > div.remote_cont > div.btn_area > a.btn_prev_end").click()
 time.sleep(0.2)
 
 # 폴더 만들기
@@ -37,17 +40,16 @@ while True:
     try:
         tag = driver.find_element_by_css_selector(f"#content_image_{cnt}")
         img = tag.get_attribute("src")
-        urllib.request.urlretrieve(img, f"{word}//" + f"{word} {total}화 {cnt}.jpg")
+        urllib.request.urlretrieve(
+            img, f"{word}//" + f"{word} {total}화 {cnt}.jpg")
         cnt += 1
         time.sleep(0.2)
     except:
-        driver.find_element_by_css_selector(f"#comicRemocon > div.remote_cont > div.btn_area > a.btn_next").click()
+        driver.find_element_by_css_selector(
+            f"#comicRemocon > div.remote_cont > div.btn_area > a.btn_next").click()
         cnt = 0
         total += 1
         time.sleep(0.2)
 
 
-
-
-
-
+print("이미지 크롤링 완료")

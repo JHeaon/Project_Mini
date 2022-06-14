@@ -11,7 +11,8 @@ opener.addheaders = [
 urllib.request.install_opener(opener)
 
 
-word = input("검색할 단어 : ")
+word = input("구글에서 검색할 사진 : ")
+num = int(input("몇 장 가져올까요? : "))
 url = f"https://www.google.com/search?q={quote(word)}&tbm=isch&ved="
 driver = webdriver.Chrome("Img_crawling\chromedriver.exe")
 driver.get(url)
@@ -21,13 +22,15 @@ tags = driver.find_elements_by_class_name("rg_i")
 time.sleep(1)
 
 os.mkdir(f"{word}")
-cnt = 1
+cnt = 0
 time.sleep(1)
 
 for tag in tags:
-    if cnt == 3:
+    if cnt == num:
         break
     img = tag.get_attribute("src")
     urllib.request.urlretrieve(img, f"{word}//" + f"{word}{cnt}.jpg")
     cnt += 1
     time.sleep(2)
+
+print("이미지 크롤링 완료")
