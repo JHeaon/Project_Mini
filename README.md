@@ -1,3 +1,5 @@
-# Heaon_Project 
+# Project_portpolio
 
-▶️ Project 만든 것들을 모아둔 것들 입니다. 
+😀안녕하세요 JHeaon 입니다. <br>
+제가 만든 프로그램들을 모아두는 곳 입니다. 알아보기 쉽게 폴더마다 이름을 설정하여 구분하였습니다.
+
